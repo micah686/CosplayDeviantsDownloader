@@ -1,0 +1,31 @@
+﻿<Window x:Class="CosplayDeviantsDownloader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CosplayDeviantsDownloader"
+        Icon="cosplay-deviants.png"
+        mc:Ignorable="d"
+        Title="Cosplay Deviants Downloader" Height="350" Width="525">
+    <Grid ShowGridLines="True">
+        <Image HorizontalAlignment="Left" Height="72" VerticalAlignment="Top" Width="75" Margin="10,10,0,0" Source="cosplay-deviants.png" />
+        <Label Content="Version 1.1" HorizontalAlignment="Left" Margin="100,30,0,0"></Label>
+        <Label Content="Enter largest Album Id: " HorizontalAlignment="Left" Margin="16,82,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AlbumIdTextbox" HorizontalAlignment="Left" Height="23" Margin="155,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="74" Text="26672"/>
+        <Label Content="Enter &quot;CosplayDeviants&quot; Cookie Content:" HorizontalAlignment="Left" Margin="16,113,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CosplayDeviantCookie" HorizontalAlignment="Left" Height="23" Margin="246,116,0,0" TextWrapping="NoWrap"  Text="12345%username%email%numbers" VerticalAlignment="Top" Width="255"/>
+        <Button Content="Start Download" HorizontalAlignment="Left" Margin="192,151,0,0" VerticalAlignment="Top" Width="92" Click="Button_Click"/>
+        <Label Content="Speed:" HorizontalAlignment="Left" Margin="16,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelSpeed" Content="" HorizontalAlignment="Left" Margin="67,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="Downloaded: " HorizontalAlignment="Left" Margin="16,197,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelDownloaded" Content="" HorizontalAlignment="Left" Margin="104,197,0,0" VerticalAlignment="Top"/>
+        <Label Content="File:" HorizontalAlignment="Left" Margin="16,228,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelFilesDownloaded" Content="" HorizontalAlignment="Left" Margin="52,228,0,0" VerticalAlignment="Top"/>
+        <Label Content="Current File:" HorizontalAlignment="Left" Margin="16,254,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LabelCurrentFile" Content="" HorizontalAlignment="Left" Margin="90,254,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="MessageContent" Content="" HorizontalAlignment="Left" Margin="10,293,0,0" VerticalAlignment="Top"/>
+        
+
+    </Grid>
+</Window>
